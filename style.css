@@ -629,13 +629,15 @@ button.datenschutz-toggle {
 }
 
 #datenschutz-collape .well {
-  background-color: #d5dcea;
+  background-color: transparent;
   border: none;
 }
+
 
 /********************/
 /****** Admidio *****/
 /********************/
+
 #plugin_login_form > h3 {
   display: none;
 }
@@ -648,6 +650,7 @@ button.datenschutz-toggle {
 /********************/
 /***** Kalender *****/
 /********************/
+
 .ai1ec-calendar * {
   text-shadow: none !important;
 }
