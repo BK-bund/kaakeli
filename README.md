@@ -22,10 +22,3 @@
 #### Customise your theme
 * Provide a `style.css` with `Template: kaakeli` in the header
 * Provide a `functions.php` and import your stylesheed via `wp_enqueue_style()`
-
-
-
-## Changelog
-
-#### 1.0
-* First Version
