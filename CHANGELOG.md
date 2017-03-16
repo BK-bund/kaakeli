@@ -1,3 +1,5 @@
+# Changelog
+
 ## 1.0.2
 - Added styles for footer
 
@@ -5,5 +7,5 @@
 - Bugfixes
 
 ## 1.0
-
 - First Version
+
