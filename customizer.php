@@ -11,21 +11,21 @@ function mytheme_customize_register( $wp_customize ) {
   $wp_customize->add_section( 'colors' , array(
     'title' =>  'Farb Schema',
   ) );
-  
+
   $txtcolors[] = array(
-    'slug'=>'footer_text_color', 
+    'slug'=>'footer_text_color',
     'default' => '#fff',
     'label' => 'Footer Text Farbe'
   );
-  
+
   $txtcolors[] = array(
-    'slug'=>'footer_link_color', 
+    'slug'=>'footer_link_color',
     'default' => '#fff',
     'label' => 'Footer Link Farbe'
   );
 
   $txtcolors[] = array(
-    'slug'=>'footer_background_color', 
+    'slug'=>'footer_background_color',
     'default' => '#333',
     'label' => 'Footer Hintergrund Farbe'
   );
@@ -35,7 +35,7 @@ function mytheme_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
       $txtcolor['slug'], array(
         'default'           => $txtcolor['default'],
-        'type'              => 'option', 
+        'type'              => 'option',
         'capability'        => 'edit_theme_options',
         'sanitize_callback' => 'sanitize_hex_color',
       )
@@ -44,8 +44,8 @@ function mytheme_customize_register( $wp_customize ) {
     $wp_customize->add_control(
       new WP_Customize_Color_Control(
         $wp_customize,
-        $txtcolor['slug'], 
-        array('label' => $txtcolor['label'], 
+        $txtcolor['slug'],
+        array('label' => $txtcolor['label'],
         'section' => 'colors',
         'settings' => $txtcolor['slug'])
       )
@@ -84,11 +84,11 @@ function mytheme_customize_register( $wp_customize ) {
     'section' => 'footer_settings',
     'type'    => 'textarea',
   ));
-  
+
   $wp_customize->add_section('info', array(
     'title'          => 'Website-Informationen'
   ));
-  
+
   // Mobile logo
   $wp_customize->add_setting('mobile_logo', array(
     'default'        => '',
@@ -120,21 +120,17 @@ $themelogo = get_theme_mod( 'mobile_logo' );
 ?>
 <style>
 
-.banner {
-  /*background-image: url("<?php echo $themelogo ?>");*/
-}
-
 .bs-docs-footer {
   color: <?php echo $footer_text_color; ?>;
   background-color: <?php echo $footer_background_color; ?>;
 }
 
-.bs-docs-footer hr.fedi-dash {
-  border-top: 1px dashed <?php echo $footer_text_color; ?>;
-}
-
 .bs-docs-footer a {
   color: <?php echo $footer_link_color; ?>;
+}
+
+.bs-docs-footer hr.fedi-dash {
+  border-top: 1px dashed <?php echo $footer_text_color; ?>;
 }
 
 .reiter-footer {
