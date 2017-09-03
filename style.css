@@ -633,6 +633,7 @@ button.datenschutz-toggle {
 #datenschutz-collape {
   background-color: transparent;
   border: none;
+  padding-top: 30px;
 }
 
 
