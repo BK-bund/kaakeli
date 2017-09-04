@@ -24,7 +24,7 @@
       </div>
     </div>
   </div>
-  <div class="collapse">
+  <div class="collapse" id="datenschutz-collape">
     <div class="container">
         <div class="row">
           <div class="col-md-9">
