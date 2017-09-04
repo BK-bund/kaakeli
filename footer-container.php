@@ -7,10 +7,12 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="datenschutz-container-toogle">
     <div class="row">
       <div class="col-xs-9">
-        <h2 class="nomargin-top">Datenschutzbestimmungen</h2>
+        <a data-toggle="collapse" href="#datenschutz-collape" aria-expanded="false" aria-controls="datenschutz-collape">
+          <strong>Datenschutzbestimmungen</strong>
+        </a>
       </div>
       <div class="col-xs-3">
         <div class="pull-right">
@@ -22,7 +24,7 @@
       </div>
     </div>
   </div>
-  <div class="collapse" id="datenschutz-collape">
+  <div class="collapse">
     <div class="container">
         <div class="row">
           <div class="col-md-9">
