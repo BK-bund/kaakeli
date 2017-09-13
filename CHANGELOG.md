@@ -1,5 +1,8 @@
 # Changelog
 
+## Unreleased
+- Added option to include header without logo
+
 ## 1.0.3
 - Added jquery and bootstrap to package
 - Added piwik footer
