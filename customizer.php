@@ -134,7 +134,7 @@ $themelogo = get_theme_mod( 'mobile_logo' );
 }
 
 .reiter-footer {
-  border-bottom: 30px solid <?php echo $footer_background_color; ?>;
+  border-bottom-color: <?php echo $footer_background_color; ?>;
 }
 
 .reiter-footer > * {

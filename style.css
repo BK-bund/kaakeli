@@ -216,6 +216,8 @@ img.banner {
   height: 30px;
   float: left;
   border-right: 6px solid transparent;
+  border-bottom-width: 32px;
+  border-bottom-style: solid;
 }
 
 .reiter > * {
@@ -238,7 +240,7 @@ img.banner {
 }
 
 .reiter-weis {
-  border-bottom: 30px solid #fff;
+  border-bottom-color: #fff;
 }
 
 .reiter-weis > * {
@@ -246,7 +248,7 @@ img.banner {
 }
 
 .reiter-blau {
-  border-bottom: 3px solid #acbad5;
+  border-bottom-color: #acbad5;
 }
 
 .reiter-blau > * {
@@ -254,7 +256,7 @@ img.banner {
 }
 
 .reiter-grau {
-  border-bottom: 30px solid #d9d9d9;
+  border-bottom-color: #d9d9d9;
 }
 
 .reiter-grau > * {
@@ -263,7 +265,7 @@ img.banner {
 }
 
 .reiter-gruen {
-  border-bottom: 30px solid #3ab200;
+  border-bottom-color: #3ab200;
 }
 
 .reiter-gruen > * {
@@ -272,7 +274,7 @@ img.banner {
 }
 
 .reiter-dunkelgruen {
-  border-bottom: 30px solid #2b5235;
+  border-bottom-color: #2b5235;
 }
 
 .reiter-dunkelgruen > * {
