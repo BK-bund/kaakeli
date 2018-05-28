@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.1
+- Added option to set github repository url
+
 ## 1.1.0
 - Added option to include header without logo
 - Added option to set a footer text for data protection and for an imprint
