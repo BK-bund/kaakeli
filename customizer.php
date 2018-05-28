@@ -106,6 +106,25 @@ function mytheme_customize_register( $wp_customize ) {
     'type'    => 'textarea',
   ));
 
+  $wp_customize->add_setting('github', array(
+    'default'        => '',
+  ));
+  $wp_customize->add_control('github', array(
+    'label'   => 'Github Repository',
+    'section' => 'footer_settings',
+    'type'    => 'text',
+  ));
+
+  $wp_customize->add_setting('github_logo_white', array(
+    'default'        => false,
+  ));
+  $wp_customize->add_control('github_logo_white', array(
+    'label'   => 'Use white Github logo',
+    'section' => 'footer_settings',
+    'type'    => 'checkbox',
+  ));
+
+
   $wp_customize->add_section('info', array(
     'title'          => 'Website-Informationen'
   ));

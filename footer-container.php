@@ -6,18 +6,27 @@
         <hr class="featurette-divider fedi-dash">
         <div class="row">
           <div class="col-md-9">
-            <a target="_blank" href="https://github.com/BK-bund/BK-Webpage"><img src="/wp-content/uploads/GitHub-Mark-32px.png" class="img-responsive github-icon" alt="GitHub-Icon" />
             <?php
-              $theme = wp_get_theme();
-              echo "Version " . $theme->get( 'Version' );
+            if (get_theme_mod( 'github' ) != '') {
+              if ( get_theme_mod( 'github_logo_white' )) {
+                $logo = 'GitHub-Mark-Light-32px.png';
+              } else {
+                $logo = 'GitHub-Mark-32px.png';
+              }
+              echo '<a target="_blank" href=' . get_theme_mod( 'github' ) . '>
+              <img src="' . get_template_directory_uri() . '/img/' . $logo . '" class="img-responsive github-icon" alt="GitHub-Icon" />
+              </a>';
+            }
+
+            $theme = wp_get_theme();
+            echo "Version " . $theme->get( 'Version' );
             ?>
-            </a>
+            <br>
             Made with <a target="_blank" href="https://github.com/BK-bund/kaakeli">
             <?php
               $parent_theme = wp_get_theme(get_template());
-              echo $parent_theme->get( 'Name' ) . " " . $parent_theme->get( 'Version' );
+              echo $parent_theme->get( 'Name' ) . "</a> Version " . $parent_theme->get( 'Version' );
             ?>
-            </a>
           </div>
         </div>
         <hr class="featurette-divider fedi-dash">
