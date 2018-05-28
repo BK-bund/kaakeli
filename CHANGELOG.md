@@ -1,7 +1,9 @@
 # Changelog
 
-## Unreleased
+## 1.1.0
 - Added option to include header without logo
+- Added option to set a footer text for data protection and for an imprint
+- Fix some css problems
 
 ## 1.0.3
 - Added jquery and bootstrap to package
