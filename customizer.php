@@ -75,12 +75,33 @@ function mytheme_customize_register( $wp_customize ) {
   $wp_customize->add_section('footer_settings', array(
     'title'          => 'Footer'
   ));
-  //adding setting for footer text area
+
+  // Add setting for footer text
   $wp_customize->add_setting('footer_text', array(
-    'default'        => 'Default Text For Footer Section',
+    'default'        => 'Default text for footer',
   ));
   $wp_customize->add_control('footer_text', array(
     'label'   => 'Footer Text',
+    'section' => 'footer_settings',
+    'type'    => 'textarea',
+  ));
+
+  // Add setting for dataprotection text
+  $wp_customize->add_setting('footer_dataprotection', array(
+    'default'        => '',
+  ));
+  $wp_customize->add_control('footer_dataprotection', array(
+    'label'   => 'Datenschutzbestimmungen',
+    'section' => 'footer_settings',
+    'type'    => 'textarea',
+  ));
+
+  // Add setting for dataprotection text
+  $wp_customize->add_setting('footer_imprint', array(
+    'default'        => '',
+  ));
+  $wp_customize->add_control('footer_imprint', array(
+    'label'   => 'Impressum',
     'section' => 'footer_settings',
     'type'    => 'textarea',
   ));
