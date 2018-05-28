@@ -6,7 +6,7 @@ Author:       Ben Schumacher
 Author URI:   https://github.com/BenSchumacher-cjf
 License:      Apache License
 License URI:  https://www.apache.org/licenses/
-Version:      1.0.3
+Version:      1.1.0
 */
 
 
@@ -89,6 +89,10 @@ a, a:hover, a:focus {
   text-decoration: none;
 }
 
+.table {
+  font-size: 20px;
+}
+
 small.light {
   font-size: inherit;
   color: #999999;
@@ -105,6 +109,15 @@ small.light {
 @media (min-width: 768px) and (max-width: 991px) {
   .section-padding {
     padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 25px;
+  }
+  .section-header {
+    margin: 0 0 25px 0;
   }
 }
 
@@ -216,7 +229,7 @@ img.banner {
   height: 30px;
   float: left;
   border-right: 6px solid transparent;
-  border-bottom-width: 32px;
+  border-bottom-width: 30px;
   border-bottom-style: solid;
 }
 
@@ -225,7 +238,7 @@ img.banner {
   letter-spacing: 0.4px;
   font-size: 25px;
   display: block;
-  padding: 7px 10px 0 10px !important;
+  padding: 5px 10px 0 10px !important;
   margin: 0;
 }
 
@@ -280,6 +293,15 @@ img.banner {
 .reiter-dunkelgruen > * {
   background-color: #2b5235;
   color: #ffffff;
+}
+
+.reiter-wrapper .active {
+  height: 32px;
+  border-bottom-width: 32px;
+}
+
+.reiter-footer {
+  height: 30px;
 }
 
 
@@ -571,16 +593,19 @@ ul.simcal-events {
 /******* Footer *****/
 /********************/
 .bs-docs-footer {
-  padding: 50px 0 0 0;
+  padding: 50px 0;
+}
+
+.bs-docs-footer a {
+  text-decoration: underline;
 }
 
 .bs-docs-footer small {
-  margin: 0 0 25px 0;
   display: block;
 }
 
 .reiter-container-footer {
-  margin-top: 100px;
+  margin-top: 80px;
   position: relative;
   z-index: 10;
 }
@@ -608,10 +633,6 @@ hr.fedi-dash {
   float: left;
   height: 1em;
   margin-right: 5px;
-}
-
-#datenschutz-container-toogle {
-  padding-bottom: 50px;
 }
 
 button.datenschutz-toggle span.glyphicon-circle-arrow-down {
