@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.2
+- Fix iframe in footer
+
 ## 1.1.1
 - Added option to set github repository url
 

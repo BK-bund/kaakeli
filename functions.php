@@ -13,7 +13,7 @@ function enqueue_bootstrap_style() {
 add_action( 'wp_enqueue_scripts', 'enqueue_bootstrap_style' );
 
 function enqueue_kaakeli_style() {
-  wp_enqueue_style( 'kaakeli', get_template_directory_uri().'/style.css', array('bootstrap'),  '1.1.1', 'all' );
+  wp_enqueue_style( 'kaakeli', get_template_directory_uri().'/style.css', array('bootstrap'),  '1.1.2', 'all' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_kaakeli_style' );
 
